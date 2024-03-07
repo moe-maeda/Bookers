@@ -1,5 +1,6 @@
+<main>
 <h1>Books</h1>
-<table>
+<table class="index-list">
   <thead>
     <tr>
       <th>Title</th>
@@ -20,7 +21,7 @@
 </table>
 
 
-<h1>New books</h1>
+<h2>New book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
@@ -31,10 +32,14 @@
 <% end %>
 
 <%= form_with model: @book do |f| %>
-  <h4>Title</h4>
+<div class="new-box">
+  <p class="new-text">Title</p>
   <%= f.text_field :title %>
-  <h4>Body</h4>
+</div>
+<div class="new-box">
+  <p class="new-text">Body</p>
   <%= f.text_area :body %>
-  <br>
+</div>
   <%= f.submit 'Create Book' %>
 <% end %>
+</main>
