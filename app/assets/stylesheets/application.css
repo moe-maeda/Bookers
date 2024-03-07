@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+.flash-message {
+  color: #228b22;
+  font-size: 14px;
+  padding: 30px 50px;
+}
