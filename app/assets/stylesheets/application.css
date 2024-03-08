@@ -13,35 +13,41 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-  margin: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.flash-message {
-  color: #228b22;
-  font-size: 14px;
+body {
+  margin: 35px;
+}
+
+h1,h2 {
+  margin: 20px 0;
 }
 
 .index-list {
   border-collapse: separate;
   border-spacing: 15px 10px;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+}
+
+.form-box {
+  margin-bottom: 5px;
+}
+
+.form-text {
+  text-align: left;
   margin: 0;
   font-size: 14px;
 }
 
-.new-box {
-  margin-bottom: 5px;
-}
-
-.new-text {
-  text-align: left;
-  margin: 0;
-}
-
 .view-box {
   display: block;
-  margin: 3px 50px;
+  margin: 32px;
   font-size: 14px;
   border-collapse: separate;
   border-spacing: 5px;
@@ -49,15 +55,56 @@ body {
 
 .view-text {
   display: inline-block;
-}
-
-.link-box {
-  display: inline-block;
-  margin: 5px;
-  border-color: #000000;
   font-size: 14px;
 }
 
-.link-box :first-child {
-  margin-left: 0;
+.link-content {
+  display: flex;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.show-link1 {
+  display: inline-block;
+  position: relative;
+}
+
+.show-link1 :after {
+  margin: 0 20px;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: #000000;
+  position: absolute;
+  left: 50%;
+}
+
+.show-link2 {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.edit-link1 {
+  display: inline-block;
+  position: relative;
+}
+
+.edit-link1 :after {
+  margin: 0 20px;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: #000000;
+  position: absolute;
+  left: 65%;
+}
+
+.edit-link2 {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.flash-message {
+  color: #228b22;
+  font-size: 14px;
 }
