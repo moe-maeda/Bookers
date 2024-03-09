@@ -108,3 +108,21 @@ h1,h2 {
   color: #228b22;
   font-size: 14px;
 }
+
+.errors-box {
+  display: block;
+  width: 478px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.errors-title {
+  background-color: #DD0000;
+  color: #ffffff;
+  padding: 5px 15px;
+}
+
+.errors-message {
+  padding: 30px 85px;
+  background-color: #EEEEEE;
+}
